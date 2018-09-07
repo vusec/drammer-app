@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ui.MainActivity"
+    tools:showIn="@layout/activity_main"
+    android:id="@+id/content_main">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_description"
+        android:id="@+id/text_description"
+        android:breakStrategy="high_quality"
+        android:layout_gravity="left"
+        android:gravity="left"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true" />
+
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:id="@+id/slider_labels"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="12dp"
+        android:layout_below="@+id/text_description"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_slider_left"
+            android:id="@+id/slider_label_left"
+            android:layout_gravity="left"
+            android:gravity="left"
+            android:textStyle="bold"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_slider_right"
+            android:id="@+id/slider_label_right"
+            android:gravity="right"
+            android:layout_gravity="right"
+            android:textStyle="bold"
+            android:layout_alignTop="@+id/slider_label_left"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/slider"
+        android:progress="0"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/slider_labels"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:padding="0dp" />
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:id="@+id/upload_check"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/slider"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/upload_checkbox"
+            android:checked="true"
+            android:state_checked="true"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_upload_check"
+            android:id="@+id/upload_checkbox_text"
+            android:layout_gravity="left|right"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/upload_checkbox"
+            android:layout_toEndOf="@+id/upload_checkbox" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:id="@+id/scroll_check"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/upload_check"
+        android:layout_alignParentLeft="true"
+        android:paddingBottom="12dp"
+        android:layout_alignParentStart="true">
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/scroll_checkbox"
+            android:checked="true"
+            android:state_checked="true"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_scroll_check"
+            android:id="@+id/text_scroll_check"
+            android:layout_gravity="left|right"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/scroll_checkbox"
+            android:layout_toEndOf="@+id/scroll_checkbox" />
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_buttonstop"
+        android:id="@+id/button_stop"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_below="@+id/scroll_check"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_buttonstart"
+        android:id="@+id/button_start"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_alignTop="@+id/button_stop"
+        android:layout_alignRight="@+id/scroll_check"
+        android:layout_alignEnd="@+id/scroll_check" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_vulnerable"
+        android:gravity="top|center"
+        android:layout_below="@+id/button_stop"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textStyle="normal|bold"
+        android:padding="12dp" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/view_result"
+        android:scrollbars="vertical"
+        android:fillViewport="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/slider"
+        android:layout_alignEnd="@+id/slider"
+        android:layout_below="@+id/text_vulnerable"
+        android:layout_alignParentBottom="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_result"
+            android:textSize="8sp"
+            android:typeface="monospace" />
+    </ScrollView>
+
+
+
+
+</RelativeLayout>

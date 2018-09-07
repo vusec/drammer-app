@@ -1,0 +1,67 @@
+<resources>
+    <string name="app_name">Drammer</string>
+    <string name="app_name_ascii">
+        ______\u00A0\u00A0\u00A0______\u00A0_______\u00A0_______\u00A0_______\u00A0_______\u00A0\u00A0______\n|\u00A0\u00A0\u00A0\u00A0\u00A0\\\u00A0|_____/\u00A0|_____|\u00A0|\u00A0\u00A0|\u00A0\u00A0|\u00A0|\u00A0\u00A0|\u00A0\u00A0|\u00A0|______\u00A0|_____/\n|_____/\u00A0|\u00A0\u00A0\u00A0\u00A0\\_\u00A0|\u00A0\u00A0\u00A0\u00A0\u00A0|\u00A0|\u00A0\u00A0|\u00A0\u00A0|\u00A0|\u00A0\u00A0|\u00A0\u00A0|\u00A0|______\u00A0|\u00A0\u00A0\u00A0\u00A0\\_\n
+    </string>
+
+    <string name="text_description">Check whether your device is vulnerable to the Rowhammer bug:</string>
+
+    <string name="text_buttonstart">HAMMERTIME</string>
+    <string name="text_buttonstop">Stop</string>
+    <string name="text_slider_left">relaxed</string>
+    <string name="text_slider_right">aggressive</string>
+    <string name="text_upload_check">Send statistics about test result</string>
+    <string name="text_scroll_check">Auto-scroll result</string>
+
+    <string name="text_notification">Hammering in progress...</string>
+    <string name="text_notification_done">Hammering has finished</string>
+
+    <string name="text_permission_title">Access to IMEI?</string>
+    <string name="text_permission_message">We would like to use your IMEI (protected by Android with the permission to \"make and manage phone calls\") to estimate the age of your device.</string>
+
+    <string name="text_info">Drammer is a deterministic Rowhammer-based attack that relies on the predictable memory reuse patterns by physical memory allocators.
+        This app allows you to test whether your device is vulnerable to Rowhammer.\nYou can specify how aggressively the app tries to free up memory to test, however, use this option with caution:
+        setting it too high likely causes the app to become unresponsive and may hang your device and trigger a reboot.
+        \n\nThe app optionally also collects basic statistics on the type of your device and your test results so that we can gain insights into the number and type of
+        vulnerable devices in the wild, so please consider sharing them for science.
+        \n\nDISCLAIMER\nUse this app at your own risk. We are not responsible for any device damage, undesired side effects, or unexpected behavior. A negative test result also does not guarantee
+        that your device is not vulnerable to Rowhammer.
+        \n\nMORE INFO\n<b>Drammer: Deterministic Rowhammer Attacks on Mobile Platforms</b>\nACM Conference on Computer and Communications Security (CCS 2016)\n<a href="https://www.vusec.net/projects/drammer/">https://www.vusec.net/projects/drammer</a>\n<b>GuardION: Practical Mitigation of DMA-based Rowhammer Attacks on ARM</b>\nConference on Detection of Intrusions and Malware &amp; Vulnerability Assessment (DIMVA 2018)\n<a href="https://rampageattack.com">https://rampageattack.com</a>
+        \n\nINCLUDED LIBRARIES\n<a href="https://github.com/jaredrummler/AndroidDeviceNames">https://github.com/jaredrummler/AndroidDeviceNames"</a>
+    </string>
+
+    <string name="text_info_short">Drammer is a deterministic Rowhammer-based attack that relies on the predictable memory reuse patterns by physical memory allocators.
+        This app allows you to test whether your device is vulnerable to Rowhammer.\nYou can specify how aggressively the app tries to free up memory to test, however, use this option with caution:
+        setting it too high likely causes the app to become unresponsive and may hang your device and trigger a reboot.
+        \n\nThe app optionally also collects basic statistics on the type of your device and your test results so that we can gain insights into the number and type of
+        vulnerable devices in the wild, so please consider sharing them for science.
+        \n\nDISCLAIMER\nUse this app at your own risk. We are not responsible for any device damage, undesired side effects, or unexpected behavior. A negative test result also does not guarantee
+        that your device is not vulnerable to Rowhammer.
+        \n\nMORE INFO\n<a href="https://www.vusec.net/projects/drammer/">https://www.vusec.net/projects/drammer</a>\n<a href="https://rampageattack.com">https://rampageattack.com</a>
+    </string>
+    <string name="text_info_title">About Drammer</string>
+    <string name="text_ok">OK</string>
+
+    <string name="text_vulnerable">Bit flips found. Your device is vulnerable to Rowhammer.</string>
+    <string name="text_notvulnerable">No bit flips found yet...</string>
+
+    <string name="text_upload">Finishing up...</string>
+    <string name="text_upload_button">Dismiss</string>
+
+    <string name="text_download">Downloading content...</string>
+    <string name="text_download_success">Download successful</string>
+    <string name="text_download_error">Download failed</string>
+    <string name="text_download_sslerror">Download failed (insecure connection)</string>
+    <string name="text_unavailable">Drammer is currently not available for your device.</string>
+
+    <string name="text_alert">Do you want to send feedback to our server?</string>
+    <string name="text_alert_title">Send Feedback</string>
+
+    <string name="text_status_ready">Ready</string>
+    <string name="text_status_running">Drammer service running</string>
+    <string name="text_status_finished">Drammer service finished</string>
+    <string name="text_status_error">Error in Drammer service</string>
+    <string name="text_status_stopped">Drammer service stopped</string>
+
+
+</resources>
