@@ -1,4 +1,4 @@
-# Drammer
+# Drammer GUI
 This software is part of the open-source component of our paper "Drammer: Deterministic
 Rowhammer Attacks on Mobile Devices", published in ACM Computer and
 Communications Security (CCS) 2016. It allows you to test whether an Android
@@ -12,7 +12,7 @@ If you don't want to build the test yourself, we also provide a pre-built
 [Android app](https://vvdveen.com/drammer/drammer.apk) that has been rejected by the 
 [Google Play Store](https://play.google.com/store/apps/details?id=org.iseclab.drammer), but is available in the [Amazon Appstore](https://www.amazon.com/International-Secure-Systems-Lab-Rowhammer/dp/B01NB1JWEN/).
 
-The app optionally collects basic statistics on the type of device and test
+This app optionally collects basic statistics on the type of device and test
 results so that we can gain insights into the number and type of vulnerable
 devices in the wild, so please consider sharing them for science.
 
