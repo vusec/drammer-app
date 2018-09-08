@@ -9,8 +9,7 @@ This code base contains the source for our Android GUI app, which is a *wrapper 
 test implementation found [in this repo](https://github.com/vusec/drammer).
 
 If you don't want to build the test yourself, we also provide a pre-built
-[Android app](https://vvdveen.com/drammer/drammer.apk) that has been rejected by the 
-[Google Play Store](https://play.google.com/store/apps/details?id=org.iseclab.drammer), but is available in the [Amazon Appstore](https://www.amazon.com/International-Secure-Systems-Lab-Rowhammer/dp/B01NB1JWEN/).
+[Android app](https://vvdveen.com/drammer/drammer.apk).
 
 This app optionally collects basic statistics on the type of device and test
 results so that we can gain insights into the number and type of vulnerable
